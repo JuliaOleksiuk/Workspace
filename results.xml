@@ -1,0 +1,202 @@
+<testsuites id="" name="" tests="8" failures="4" skipped="0" errors="0" time="30.666083999999998">
+<testsuite name="Folder1/AnotherExample2.spec.ts" timestamp="2024-04-24T12:07:53.330Z" hostname="chromium" tests="2" failures="2" skipped="0" time="35.896" errors="0">
+<testcase name="Check navigation links" classname="Folder1/AnotherExample2.spec.ts" time="5.888">
+<failure message="AnotherExample2.spec.ts:5:7 Check navigation links" type="FAILURE">
+<![CDATA[  [chromium] › Folder1/AnotherExample2.spec.ts:5:7 › Check navigation links ────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected string: "Getting started | Playwright"
+    Received string: "Installation | Playwright"
+    Call log:
+      - expect.toHaveTitle with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+
+
+      19 |       for (const link of links) {
+      20 |         await page.click(`text=${link.name}`);
+    > 21 |         await expect(page).toHaveTitle(link.expectedTitle);
+         |                            ^
+      22 |         await page.goBack();
+      23 |       }
+      24 |     }
+
+        at /home/user/repos/playwright/tests/Folder1/AnotherExample2.spec.ts:21:28
+]]>
+</failure>
+<system-out>
+<![CDATA[TAP version 13
+# Subtest: Example
+ok 1 - Example
+  ---
+  duration_ms: 1.963727
+  ...
+]]>
+</system-out>
+</testcase>
+<testcase name="Check documentation pages" classname="Folder1/AnotherExample2.spec.ts" time="30.008">
+<failure message="AnotherExample2.spec.ts:27:7 Check documentation pages" type="FAILURE">
+<![CDATA[  [chromium] › Folder1/AnotherExample2.spec.ts:27:7 › Check documentation pages ────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Why Playwright?')
+
+
+      46 |
+      47 |       for (const section of sections) {
+    > 48 |         await page.click(`text=${section.name}`);
+         |                    ^
+      49 |         await expect(page).toHaveTitle(section.expectedTitle);
+      50 |         await page.goBack();
+      51 |       }
+
+        at /home/user/repos/playwright/tests/Folder1/AnotherExample2.spec.ts:48:20
+]]>
+</failure>
+<system-out>
+<![CDATA[TAP version 13
+# Subtest: Example
+ok 1 - Example
+  ---
+  duration_ms: 1.713626
+  ...
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Folder2/example.spec.ts" timestamp="2024-04-24T12:07:53.330Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.783" errors="0">
+<testcase name="has title" classname="Folder2/example.spec.ts" time="0.741">
+<properties>
+<property name="Jira" value="EFG-123">
+</property>
+</properties>
+</testcase>
+<testcase name="get started link" classname="Folder2/example.spec.ts" time="1.042">
+<properties>
+<property name="Jira" value="ABC-123">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Folder1/AnotherExample2.spec.ts" timestamp="2024-04-24T12:07:53.330Z" hostname="Mobile Chrome" tests="2" failures="2" skipped="0" time="35.886" errors="0">
+<testcase name="Check navigation links" classname="Folder1/AnotherExample2.spec.ts" time="5.876">
+<failure message="AnotherExample2.spec.ts:5:7 Check navigation links" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › Folder1/AnotherExample2.spec.ts:5:7 › Check navigation links ───────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected string: "Getting started | Playwright"
+    Received string: "Installation | Playwright"
+    Call log:
+      - expect.toHaveTitle with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-…>…</html>
+      -   unexpected value "Installation | Playwright"
+
+
+      19 |       for (const link of links) {
+      20 |         await page.click(`text=${link.name}`);
+    > 21 |         await expect(page).toHaveTitle(link.expectedTitle);
+         |                            ^
+      22 |         await page.goBack();
+      23 |       }
+      24 |     }
+
+        at /home/user/repos/playwright/tests/Folder1/AnotherExample2.spec.ts:21:28
+]]>
+</failure>
+<system-out>
+<![CDATA[TAP version 13
+# Subtest: Example
+ok 1 - Example
+  ---
+  duration_ms: 2.851549
+  ...
+]]>
+</system-out>
+</testcase>
+<testcase name="Check documentation pages" classname="Folder1/AnotherExample2.spec.ts" time="30.01">
+<failure message="AnotherExample2.spec.ts:27:7 Check documentation pages" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › Folder1/AnotherExample2.spec.ts:27:7 › Check documentation pages ───────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Why Playwright?')
+
+
+      46 |
+      47 |       for (const section of sections) {
+    > 48 |         await page.click(`text=${section.name}`);
+         |                    ^
+      49 |         await expect(page).toHaveTitle(section.expectedTitle);
+      50 |         await page.goBack();
+      51 |       }
+
+        at /home/user/repos/playwright/tests/Folder1/AnotherExample2.spec.ts:48:20
+]]>
+</failure>
+<system-out>
+<![CDATA[TAP version 13
+# Subtest: Example
+ok 1 - Example
+  ---
+  duration_ms: 1.968337
+  ...
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Folder2/example.spec.ts" timestamp="2024-04-24T12:07:53.330Z" hostname="Mobile Chrome" tests="2" failures="0" skipped="0" time="1.438" errors="0">
+<testcase name="has title" classname="Folder2/example.spec.ts" time="0.612">
+<properties>
+<property name="Jira" value="EFG-123">
+</property>
+</properties>
+</testcase>
+<testcase name="get started link" classname="Folder2/example.spec.ts" time="0.826">
+<properties>
+<property name="Jira" value="ABC-123">
+</property>
+</properties>
+</testcase>
+</testsuite>
+</testsuites>
